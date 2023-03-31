@@ -1,4 +1,4 @@
-const block = document.querySelector('.block');
+const card = document.querySelector('.card');
 
 
 
@@ -7,7 +7,7 @@ fetch('https://restcountries.com/v3.1/all').then((response) => response.json()).
 
     const box = document.createElement('div');
     box.classList.add('box');
-    block.appendChild(box);
+    card.appendChild(box);
 
     const img = document.createElement('img');
     img.src = `${countries.flags.png}`
